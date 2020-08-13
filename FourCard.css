@@ -1,0 +1,109 @@
+html,body{
+    background: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+  }
+  .fLine{
+    font-size: 2em;
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+  }
+  .sLine{
+    font-size: 2em;
+    font-weight: bolder;
+  }
+  .grey{
+    color: hsl(229, 6%, 66%);
+    font-size: 0.9em;
+  }
+  #box{
+    background: #fff;
+    padding: 0.75em;
+    padding-left: 1.5625em;
+    padding-right: 1.5625em;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0px 5px 15px hsl(229, 6%, 66%);
+    -moz-box-shadow: 0px 5px 15px hsl(229, 6%, 66%);
+    -webkit-box-shadow: 0px 5px 15px hsl(229, 6%, 66%);
+    -o-box-shadow: 0px 5px 15px hsl(229, 6%, 66%);
+  }
+  img{
+    float: right;
+  }
+  header{
+    line-height: 1em;
+    margin-bottom: 2.5em;
+  }
+  header>p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .box1{
+    grid-column:2/4;
+    grid-row: 2/4;
+    border-top:3px solid hsl(180, 62%, 55%);
+}
+.box2{
+  grid-column:4/6;
+  grid-row:1/3;
+  border-top:3px solid hsl(0, 78%, 62%);
+}
+.box3{
+  grid-column:4/6;
+  grid-row: 3/5;
+  border-top:3px solid hsl(34, 97%, 64%);
+}
+.box4{
+  grid-column:6/8;
+  grid-row: 2/4;
+  border-top:3px solid hsl(212, 86%, 64%);
+}
+.copyright{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 0.9em;
+}
+.container{
+  display: grid;
+  grid-gap: 1.5625em;
+  grid-template-columns: repeat(8,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+@media screen and (max-width:575px) {
+  .fLine{
+    font-size: 1.5em;
+  }
+  .sLine{
+    font-size: 1.5em;
+  }
+  .container{
+    display: grid;
+    grid-gap: 1.5625em;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .box1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .box2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .box3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .box4{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+}
