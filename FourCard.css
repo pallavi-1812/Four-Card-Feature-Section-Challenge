@@ -17,7 +17,7 @@ html,body{
     color: hsl(229, 6%, 66%);
     font-size: 0.9em;
   }
-  #box{
+  .box{
     background: #fff;
     padding: 0.75em;
     padding-left: 1.5625em;
@@ -43,22 +43,22 @@ html,body{
     justify-content: center;
     text-align: center;
   }
-  .box1{
+  #box1{
     grid-column:2/4;
     grid-row: 2/4;
     border-top:3px solid hsl(180, 62%, 55%);
 }
-.box2{
+#box2{
   grid-column:4/6;
   grid-row:1/3;
   border-top:3px solid hsl(0, 78%, 62%);
 }
-.box3{
+#box3{
   grid-column:4/6;
   grid-row: 3/5;
   border-top:3px solid hsl(34, 97%, 64%);
 }
-.box4{
+#box4{
   grid-column:6/8;
   grid-row: 2/4;
   border-top:3px solid hsl(212, 86%, 64%);
@@ -90,19 +90,19 @@ html,body{
     margin-left: 10px;
     margin-right: 10px;
   }
-  .box1{
+  #box1{
     grid-column: 1/2;
     grid-row: 1/2;
   }
-  .box2{
+  #box2{
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .box3{
+  #box3{
     grid-column: 1/2;
     grid-row: 3/4;
   }
-  .box4{
+  #box4{
     grid-column: 1/2;
     grid-row: 4/5;
   }
